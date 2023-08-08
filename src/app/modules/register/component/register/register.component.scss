@@ -1,0 +1,23 @@
+.register__titles {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.register__forms {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 25px 40px;
+  margin-bottom: 40px;
+}
+
+.register__button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  justify-content: center;
+}
+
+.register {
+  margin: 30px 48px;
+}

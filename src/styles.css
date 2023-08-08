@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+
+$candy-app-warn:    mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme((
+  color: (
+    primary: $candy-app-primary,
+    accent: $candy-app-accent,
+    warn: $candy-app-warn,
+  )
+)); */
+
+
+.inline-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.logo__title {
+  font-size: 18px;
+  color: #146994;
+  font-weight: bold;
+}
+
+/* colors */
+.color-gray-light {
+  color: #7D95A1;
+}
+
+/* button */
+.button-blue:hover {
+  background-color: #fff;
+  color: #7D95A1;
+  border: 1px solid #3567E9;
+  transition: 0.5s;
+}
+
+.button-blue {
+  width: 256px;
+  height: 48px;
+  border-radius: 30px;
+  background: #3567E9;
+  color: #FFFFFF;
+}
+
+.button-white {
+  width: 256px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px solid #3567E9;
+  background: #fff;
+  color: #7D95A1;
+}
+
+.button-white:hover {
+  background: #3567E9;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+.terms-blue {
+  text-decoration: none;
+  color: #3880ff;
+  cursor: pointer;
+}
+
+
+.title-principal {
+  font-size: 24px;
+  font-weight: 700;
+}

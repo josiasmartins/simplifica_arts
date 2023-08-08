@@ -1,0 +1,46 @@
+<!-- <div class="stepper-wrapper">
+  <div class="stepper-item" [ngClass]="{'active': currentStep === 0, 'completed': currentStep > 0}">
+    <div class="step-counter">1</div>
+    <div class="step-name">Primeiro</div>
+  </div>
+  <div class="stepper-item" [ngClass]="{'completed': currentStep > 1 , 'active': currentStep === 1}">
+    <div class="step-counter">2</div>
+    <div class="step-name">Segundo</div>
+  </div>
+  <div class="stepper-item" [ngClass]="{'completed': currentStep > 2 , 'active': currentStep === 2}">
+    <div class="step-counter">3</div>
+    <div class="step-name">Terceiro</div>
+  </div>
+  <div class="stepper-item" [ngClass]="{'completed': currentStep > 3 , 'active': currentStep === 3}">
+    <div class="step-counter">4</div>
+    <div class="step-name">Quarto</div>
+  </div>
+  <div class="stepper-item" [ngClass]="{'completed': currentStep > 4 , 'active': currentStep === 4}">
+    <div class="step-counter">5</div>
+    <div class="step-name">Quinto</div>
+  </div>
+</div> -->
+
+<!-- 
+  width: Largura do SVG, definida como 48 unidades.
+  height: Altura do SVG, definida como 28 unidades.
+  viewBox: Define as dimensões do espaço de visualização, neste caso, 48 unidades de largura por 28 unidades de altura.
+  fill: Define a cor de preenchimento padrão para os elementos do SVG como "none" (nenhum preenchimento).
+  xmlns: Define o namespace XML do SVG.
+  
+  <path> para desenhar uma forma geométrica no SVG. O atributo d contém as coordenadas e comandos para desenhar a forma.
+  <text> para adicionar texto ao SVG. As propriedades e atributos usados são:
+-->
+<section class="container-steps">
+  <div *ngFor="let step of steps; let index = index">
+    <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 1.79086 1.79086 0 4 0H44C46.2091 0 48 1.79086 48 4V10C45.7909 10 44 11.7909 44 14C44 16.2091 45.7909 18 48 18V24C48 26.2091 46.2091 28 44 28H4C1.79086 28 0 26.2091 0 24V18C2.20914 18 4 16.2091 4 14C4 11.7909 2.20914 10 0 10V4Z" [attr.fill]="currentStep >= index ? '#3567E9' : '#C4CFD4'"/>
+      <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#FFFFFF" font-size="12">
+        {{ index + 1  }}
+      </text>
+    </svg>
+  
+  </div>
+
+</section>
+
